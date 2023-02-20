@@ -1,11 +1,8 @@
 import { Header } from "./components/Header";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./views/Home";
 import { About } from "./views/About";
+import { MovieDetail } from "./views/MovieDetail";
 
 function App() {
   return (
@@ -16,6 +13,9 @@ function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/movie/:id">
+            <MovieDetail />
           </Route>
           <Route path="/">
             <Home />
