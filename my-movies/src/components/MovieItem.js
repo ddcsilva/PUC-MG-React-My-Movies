@@ -1,5 +1,1 @@
-export const MovieItem = ({ title }) => (
-  <li>
-    { title }
-  </li>
-)
+export const MovieItem = ({ title }) => <li>{title}</li>;
